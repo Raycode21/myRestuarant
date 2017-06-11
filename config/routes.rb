@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :models
+  resources :food_types
   get 'home/about_us'
  
   get 'home/menus'

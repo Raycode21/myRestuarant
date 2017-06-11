@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @food_type.name %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @food_type.about %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @food_type.price %>
+</p>
+
+<p>
+  <strong>Food group:</strong>
+  <%= @food_type.food_group %>
+</p>
+
+<p>
+  <strong>Remote image url:</strong>
+  <%= @food_type.remote_image_url %>
+</p>
+
+<%= link_to 'Edit', edit_food_type_path(@food_type) %> |
+<%= link_to 'Back', food_types_path %>

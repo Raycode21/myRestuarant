@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Food Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>About</th>
+      <th>Price</th>
+      <th>Food group</th>
+      <th>Remote image url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @food_types.each do |food_type| %>
+      <tr>
+        <td><%= food_type.name %></td>
+        <td><%= food_type.about %></td>
+        <td><%= food_type.price %></td>
+        <td><%= food_type.food_group %></td>
+        <td><%= food_type.remote_image_url %></td>
+        <td><%= link_to 'Show', food_type %></td>
+        <td><%= link_to 'Edit', edit_food_type_path(food_type) %></td>
+        <td><%= link_to 'Destroy', food_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Food Type', new_food_type_path %>
