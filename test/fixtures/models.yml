@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  FoodType: MyString
+  name: MyString
+  about: MyText
+  price: 9.99
+  food_group: MyString
+  remote_image_url: MyString
+
+two:
+  FoodType: MyString
+  name: MyString
+  about: MyText
+  price: 9.99
+  food_group: MyString
+  remote_image_url: MyString
