@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Food Types</h1>
+<h1>Our Delicacies</h1>
 
-<table>
-  <thead>
+<table class = "table table-striped">
+  <thead class = "thead thead-defaultkkmm">
     <tr>
       <th>Name</th>
       <th>About</th>
@@ -21,7 +21,8 @@
         <td><%= food_type.about %></td>
         <td><%= food_type.price %></td>
         <td><%= food_type.food_group %></td>
-        <td><%= food_type.remote_image_url %></td>
+        <td><%=image_tag food_type.image_url %></td>
+
         <td><%= link_to 'Show', food_type %></td>
         <td><%= link_to 'Edit', edit_food_type_path(food_type) %></td>
         <td><%= link_to 'Destroy', food_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -32,4 +33,4 @@
 
 <br>
 
-<%= link_to 'New Food Type', new_food_type_path %>
+<%= link_to 'New Food Type', new_food_type_path, class: "btn btn-secondary"%>
