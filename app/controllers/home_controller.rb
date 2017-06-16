@@ -6,14 +6,14 @@ class HomeController < ApplicationController
   def menus 
   	@food_types = FoodType.all 
   	if params[:section]
-  		@food_types FoodType.where section: params[:section]
+  		@food_types = FoodType.where section: params[:section]
   	else
-  		@food_types = Foodtype.all
+  		@food_types = FoodType.all
   	end
   end 
 
 
   def talk_to_us
   end
-end
+ 
 end
