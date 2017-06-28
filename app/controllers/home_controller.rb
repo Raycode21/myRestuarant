@@ -4,9 +4,8 @@ class HomeController < ApplicationController
   end
 
   def menus 
-  	@food_types = FoodType.all 
-  	if params[:section]
-  		@food_types = FoodType.where section: params[:section]
+   if params[:food_group]
+  		@food_types = FoodType.where food_group: params[:food_group]
   	else
   		@food_types = FoodType.all
   	end

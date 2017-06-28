@@ -4,9 +4,33 @@
 }
 
 .jumbotron {
-	background-image: url(rest.jpg);
+	background-image: url(lettuce_chicken.jpg);
 	color: yellow;
+	background-size: cover;
+
+
 }
+
+
+.lead {
+	text-align:center;
+}
+
+.lead2 {
+	text-align:center;
+	line-height:1.7em;
+}
+
+
+#contacts , {
+	color:blue;
+}
+.address{
+	color:blue;
+}
+
+
+
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/

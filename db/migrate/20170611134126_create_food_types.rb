@@ -1,6 +1,6 @@
 class CreateFoodTypes < ActiveRecord::Migration[5.0]
   def change
-    create_table :food_types do |t|
+      create_table :food_types do |t|
       t.string :name
       t.text :about
       t.decimal :price
@@ -8,6 +8,9 @@ class CreateFoodTypes < ActiveRecord::Migration[5.0]
       t.string :remote_image_url
 
       t.timestamps
-    end
+    
+
   end
+  
+
 end

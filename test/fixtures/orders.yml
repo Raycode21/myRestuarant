@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  food_type: MyString
+  food_group: MyString
+  table_no: 1
+  price: 9.99
+  total: 9.99
+
+two:
+  food_type: MyString
+  food_group: MyString
+  table_no: 1
+  price: 9.99
+  total: 9.99
