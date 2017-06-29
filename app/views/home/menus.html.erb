@@ -1,4 +1,6 @@
+<div class = "menupage">
 <h1>Menu</h1>
+
 <% FoodGroup.all.each do |food_group|%>
 	<div class="btn-group" role="group" aria-label="Basic example">
 <%=link_to food_group,home_menus_path(food_group:food_group),class:'btn btn-secondary'%>
@@ -9,12 +11,13 @@
 <div class = "card">
   <div class= "card-header"><%= food_type.name%></div>
    <div class = "card-block">
-     <%=image_tag food_type.image_url%>
+     <%=image_tag food_type.image_url, class:'img-rounded'%>
      <p><%=food_type.price %></p>
                  <%= link_to "Order Now",home_orders_path, class: "btn btn-primary btn-lg"%>
 
 
     </div>
+</div>
 </div>
 
 <%end%>
