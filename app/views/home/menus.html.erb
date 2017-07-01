@@ -1,24 +1,38 @@
-<div class = "menupage">
-<h1>Menu</h1>
+
+<div class = 'menupage'>
+
+<%=link_to "Menu",home_menus_path%>
 
 <% FoodGroup.all.each do |food_group|%>
 	<div class="btn-group" role="group" aria-label="Basic example">
-<%=link_to food_group,home_menus_path(food_group:food_group),class:'btn btn-secondary'%>
-</div>
+       <%=link_to food_group,home_menus_path(food_group:food_group),class:'btn btn-secondary'%>
+    </div>
+
 <% end%>
+     <div> </div>
+</br>
 
 <%@food_types.each do |food_type|%>
-<div class = "card">
-  <div class= "card-header"><%= food_type.name%></div>
+ 
+ <div class="container">
+
+<div class = "card" style="width: 20rem;>
+   <div class = "card-header"> <%= food_type.name%> </div>
    <div class = "card-block">
-     <%=image_tag food_type.image_url, class:'img-rounded'%>
-     <p><%=food_type.price %></p>
-                 <%= link_to "Order Now",home_orders_path, class: "btn btn-primary btn-lg"%>
+          <%=image_tag food_type.image_url, class:'image'%>
+            <p class="card-text"><%=food_type.about%></p>
 
-
+               <p><%=food_type.price %></p>
+                 <%= link_to "Order Now",home_orders_path, class: "btn btn-primary btn-sm"%>
+                  
+            </div>
     </div>
 </div>
-</div>
+
+    </div>
+    </div>
+
+
 
 <%end%>
 

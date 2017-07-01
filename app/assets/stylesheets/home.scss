@@ -13,9 +13,14 @@
 
 }
 
+
 .card {
 	background-color: #ffffcc;
+	max-width: 100%;
 
+}
+.card-text {
+    word-wrap: break-word;
 }
 
 .lead {
@@ -39,7 +44,14 @@
 }
 
 .menupage {
-	background-color: yellow;
+	background-color: light-yellow;
+	margin:20px;
+
+}
+.image {
+	width: 20%;
+    height: auto
+
 }
 
 
